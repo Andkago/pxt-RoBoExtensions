@@ -40,7 +40,7 @@ namespace ROBO {
         stop()
     }
     //% block
-    export function FortsetFremover(Fart: number): void {
+    export function FortsettFremover(Fart: number): void {
         pins.digitalWritePin(DigitalPin.P5, 1)
         pins.digitalWritePin(DigitalPin.P16, 1)
         pins.analogWritePin(AnalogPin.P0, Fart * 100)
