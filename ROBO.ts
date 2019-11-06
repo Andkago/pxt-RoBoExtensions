@@ -28,7 +28,7 @@ namespace ROBO {
         basic.pause(Tid * 1000)
         stop()
     }
-    export function FortsetFremover2(Fart: number): void {
+    export function FortsetFremover(Fart: number): void {
         pins.digitalWritePin(DigitalPin.P5, 1)
         pins.digitalWritePin(DigitalPin.P16, 1)
         pins.analogWritePin(AnalogPin.P0, Fart * 100)
@@ -50,7 +50,7 @@ namespace ROBO {
         basic.pause(Tid * 1000)
         stop()
     }
-    export function FortsettBakover2(Fart: number): void {
+    export function FortsettBakover(Fart: number): void {
         pins.digitalWritePin(DigitalPin.P5, 0)
         pins.digitalWritePin(DigitalPin.P16, 0)
         pins.analogWritePin(AnalogPin.P0, Fart * 100)
