@@ -7,6 +7,11 @@ namespace ROBO {
         basic.pause(Tid * 1000)
         stop()
     }
+
+
+    export function doSomething() : void {
+
+    }
     export function SpillLyd(Tid: number): void {
         pins.analogSetPitchPin(AnalogPin.P9)
         music.beginMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Forever)
