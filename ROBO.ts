@@ -80,7 +80,7 @@ namespace ROBO {
         basic.pause(Tid * 1000)
         stop()
     }
-    //% block
+    //% block  
     export function stop(): void {
         pins.digitalWritePin(DigitalPin.P5, 0)
         pins.digitalWritePin(DigitalPin.P16, 0)
