@@ -29,8 +29,8 @@ namespace ROBO {
     export function Fremover(Tid: number, Fart: number): void {
         pins.digitalWritePin(DigitalPin.P5, 1)
         pins.digitalWritePin(DigitalPin.P16, 1)
-        pins.analogWritePin(AnalogPin.P0, Fart * 100)
-        pins.analogWritePin(AnalogPin.P1, Fart * 80)
+        pins.analogWritePin(AnalogPin.P0, Fart * 95)
+        pins.analogWritePin(AnalogPin.P1, Fart * 100)
         basic.pause(Tid * 1000)
         stop()
     }
