@@ -10,11 +10,15 @@ namespace ROBO {
         basic.pause(Tid * 1000)
         stop()
     }
+    //% block
+    export function HarJegNoeForanMeg(): boolean {
 
-//% block
-    export function doSomething() : void {
 
+        return true
     }
+
+
+
     //% block
     export function SpillLyd(Tid: number): void {
         pins.analogSetPitchPin(AnalogPin.P9)
@@ -26,7 +30,7 @@ namespace ROBO {
         pins.digitalWritePin(DigitalPin.P5, 1)
         pins.digitalWritePin(DigitalPin.P16, 1)
         pins.analogWritePin(AnalogPin.P0, Fart * 100)
-        pins.analogWritePin(AnalogPin.P1, Fart * 100)
+        pins.analogWritePin(AnalogPin.P1, Fart * 80)
         basic.pause(Tid * 1000)
         stop()
     }
