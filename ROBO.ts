@@ -22,7 +22,7 @@ namespace ROBO {
     //% block
     export function SpillLyd(Tid: number): void {
         pins.analogSetPitchPin(AnalogPin.P9)
-        music.beginMelody(music.builtInMelody(Melodies.JumpUp), MelodyOptions.Forever)
+        music.beginMelody(music.builtInMelody(Melodies.Wedding), MelodyOptions.Forever)
         basic.pause(Tid)
     }
     //% block
