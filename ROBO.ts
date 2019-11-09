@@ -1,4 +1,4 @@
-
+let distance = 0
 //% color="#AA278D"
 namespace ROBO {
     //% block
@@ -11,13 +11,18 @@ namespace ROBO {
         stop()
     }
     //% block
-    export function HarJegNoeForanMeg(): boolean {
-
-
-        return true
+    export function JegHarNoeForanMeg(avstand : number): boolean {
+        distance = sonar.ping(
+            DigitalPin.P14,
+            DigitalPin.P15,
+            PingUnit.Centimeters
+        )
+        if (distance < avstand) {
+            return true
+        } else {
+            return false
+        }
     }
-
-
 
     //% block
     export function SpillLyd(Tid: number): void {
@@ -42,7 +47,7 @@ namespace ROBO {
         pins.analogWritePin(AnalogPin.P1, Fart * 100)
         basic.pause(Tid * 1000)
         stop()
-    } 
+    }
     //% block
     export function FortsettFremover(Fart: number): void {
         pins.digitalWritePin(DigitalPin.P5, 1)
