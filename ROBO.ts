@@ -42,7 +42,7 @@ namespace ROBO {
         pins.analogWritePin(AnalogPin.P1, Fart * 100)
         basic.pause(Tid * 1000)
         stop()
-    }
+    } 
     //% block
     export function FortsettFremover(Fart: number): void {
         pins.digitalWritePin(DigitalPin.P5, 1)
